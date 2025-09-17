@@ -1,0 +1,10 @@
+Claim 5: Table 6 consistency (Kmap1FA sufficiency)
+
+The output of the following script is consistent with the results in Table 6
+of the paper:
+
+- Command: `python3 access_analyzer.py -s data_with_kmap.csv Kmap1FA`
+  (after generating `data_with_kmap.csv` via `python3 kmap_simplify.py data.csv data_with_kmap.csv`)
+
+This claim asserts that the counts produced by the command match the counts in
+Table 6 per the mapping in `claims.txt`.

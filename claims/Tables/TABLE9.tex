@@ -1,0 +1,33 @@
+\begin{table}[h!]
+\centering
+\footnotesize
+\begin{tabular}{>{\centering\arraybackslash}p{3cm} >{\centering\arraybackslash}p{2cm} >{\centering\arraybackslash}p{2cm}}
+\toprule
+Factors & w/o \pwd reset & w/ \pwd reset \\
+\midrule
+$\{\pwd, \app, \email, \sms\}$    & 100.0\% (33) &  - \\
+$\{\pwd, \app, \sms\}$          & 97.0\% (32)  &  - \\
+$\{\pwd, \email, \sms\}$        & 84.8\% (28)  &  - \\
+$\{\pwd, \sms\}$                & 81.8\%  (27) &  - \\
+$\{\pwd, \app\}$                & 78.8\%  (26) &  - \\
+$\{\pwd, \email\}$              & 36.4\%  (12) &  - \\
+\midrule
+$\{\app, \email, \pk, \sms\}$ (=\mobilex)  & 42.4\% (14)   & 100.0\% (33) \\
+$\{\app, \email, \pk\}$                    & 42.4\% (14)   & 87.9\% (29) \\
+$\{\email, \pk, \sms\}$                    & 42.4\% (14)   & 81.8\% (27) \\
+$\{\app, \pk, \sms\}$ (=\mobile)           & 42.4\% (14)   & 69.7\% (23) \\
+$\{\app, \pk\}$                            & 42.4\% (14)   & 48.5\% (16) \\
+$\{\email, \pk\}$                          & 30.3\% (10)   & 45.5\% (15) \\
+$\{\pk, \sms\}$                            & 42.4\% (14)   & 60.6\% (20) \\
+\pk                       & 30.3\% (10)      & 30.3\% (10)\\
+\sms                      & 0.0\%       & 27.3\% (9)\\
+\email                    & 0.0\%       & 18.2\% (6)\\
+\app                      & 0.0\%       & 6.1\% (2)\\
+\bottomrule
+\end{tabular}
+\caption{The percentage of websites at which a user or an attacker can access
+ a 2FA-protected account using the indicated factors, without or with
+ leveraging password resets. Here \mobilex and \mobile represent mobile phone access with or without access to emails on the phone,
+ respectively.}
+\label{tab:factor_2fa}
+\end{table}

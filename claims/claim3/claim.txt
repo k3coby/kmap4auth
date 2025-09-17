@@ -1,0 +1,10 @@
+Claim 3: Table 4 consistency (2FA — sufficiency and necessity)
+
+The outputs of the following scripts are consistent with the results in Table 4
+of the paper (Upper/Sufficiency and Lower/Necessity sub‑tables):
+
+- `python3 access_analyzer.py -s data.csv 2FA`
+- `python3 access_analyzer.py -n data.csv 2FA`
+
+This claim asserts that the counts produced by the commands match the counts in
+both Table 4 sub‑tables per the mapping in `claims.txt`.

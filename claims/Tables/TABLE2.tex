@@ -1,0 +1,40 @@
+\begin{table}[h!]
+\centering
+\footnotesize
+\begin{tabular}{>{\centering\arraybackslash}p{4cm} >{\centering\arraybackslash}p{3cm}}
+\toprule
+Factor Sufficiency  & Percentage (Count) \\  
+\midrule
+$\access\implied\pwd$ & 55.1\% (27) \\
+$\access\implied\pk\myOr\pwd$ & 20.4\% (10) \\
+$\access\implied\email\myOr\pk\myOr\pwd$ & 4.1\% (2) \\
+$\access\implied\email\myOr\pk\myOr\pwd\myOr\sms$ & 4.1\% (2) \\
+$\access\implied\email\myOr\pwd$ & 4.1\% (2) \\
+$\access\implied\email\myOr\pwd\myOr\sms$ & 4.1\% (2) \\
+$\access\implied\pwd\myOr\sms$ & 4.1\% (2) \\
+$\access\implied\pk\myOr\pwd\myOr\sms$ & 2.0\% (1) \\
+$\access\implied\sms$ & 2.0\% (1) \\
+\midrule
+Total & 100.0\% (49) \\
+\midrule
+\midrule
+Factor Necessity  & Percentage (Count) \\ 
+\midrule
+$\access\imply\email\myOr\pk\myOr\pwd\myOr\sms$ & 100.0\% (49) \\
+$\access\imply\email\myOr\pk\myOr\pwd$ & 83.7\% (41) \\
+$\access\imply\pk\myOr\pwd\myOr\sms$ & 83.7\% (41) \\
+$\access\imply\pk\myOr\pwd$ & 75.5\% (37) \\
+$\access\imply\email\myOr\pwd\myOr\sms$ & 69.4\% (34) \\
+$\access\imply\pwd\myOr\sms$ & 61.2\% (30) \\
+$\access\imply\email\myOr\pwd$ & 59.2\% (29) \\
+$\access\imply\pwd$ & 55.1\% (27) \\
+$\access\imply\email\myOr\pk\myOr\sms$ & 2.0\% (1) \\
+$\access\imply\email\myOr\sms$ & 2.0\% (1) \\
+$\access\imply\pk\myOr\sms$ & 2.0\% (1) \\
+$\access\imply\sms$ & 2.0\% (1) \\
+\bottomrule
+\end{tabular}
+\caption{Single-factor authentication access patterns of 49 (out of
+  50) websites that support 1FA.}
+\label{tab:1fa}
+\end{table}

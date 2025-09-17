@@ -1,0 +1,13 @@
+Intended Use and Limitations
+
+Purpose
+- Runs the mapped commands and prints their outputs for comparison with tables in the paper. The key findings of the paper are all drawn from the results reported in the tables.
+
+How to use
+Three verification methods available:
+1. **Automated**: Run `python artifact/tools/compare_tables.py` for automatic verification
+2. **Notebook**: Run the Colab notebook at `artifact/colab_artifact.ipynb` for visual comparison
+3. **Individual**: Run per‑claim scripts under `claims/` and manually compare outputs using `artifact/claims.txt`
+
+Notes
+- Some tables show only selected rows to highlight important findings; scripts may produce additional lines not shown in the paper.

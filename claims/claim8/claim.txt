@@ -1,0 +1,10 @@
+Claim 8: Table 9 consistency (2FA vs. Kmap2FA factor sets)
+
+The output of the following script is consistent with the results in Table 9
+of the paper:
+
+- Command: `python3 factor_analyzer.py data_with_kmap.csv 2FA Kmap2FA`
+  (after generating `data_with_kmap.csv` via `python3 kmap_simplify.py data.csv data_with_kmap.csv`)
+
+This claim asserts that the percentages and counts produced by the command are
+consistent with Table 9 per the mapping in `claims.txt`.

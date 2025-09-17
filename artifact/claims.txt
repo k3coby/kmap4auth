@@ -1,0 +1,24 @@
+- Claim 1: 
+    - "python access_analyzer.py -s data.csv 1FA" outputs the results used by TABLE 2 (Upper sub-table)
+    - "python access_analyzer.py -n data.csv 1FA" outputs the results used by TABLE 2 (Lower sub-table)
+- Claim 2: 
+    - "python access_analyzer.py -s data.csv Reset1FA" outputs the results used by TABLE 3 (Upper sub-table)
+    - "python access_analyzer.py -n data.csv Reset1FA" outputs the results used by TABLE 3 (Lower sub-table)
+- Claim 3:
+    - "python access_analyzer.py -s data.csv 2FA" outputs the results used by TABLE 4 (Upper sub-table)
+    - "python access_analyzer.py -n data.csv 2FA" outputs the results used by TABLE 4 (Lower sub-table)
+- Claim 4:
+    - "python access_analyzer.py -s data.csv Reset2FA" outputs the results used by TABLE 5 (Upper sub-table)
+    - "python access_analyzer.py -n data.csv Reset2FA" outputs the results used by TABLE 5 (Lower sub-table)
+
+- K-Map simplication (prep. for Claim 5, 6, 7, and 8): "python kmap_simplify.py data.csv" outputs "data_with_kmap.csv" which include new result columns for K-Map simplicifaction
+
+- Claim 5: "python access_analyzer.py -s data_with_kmap.csv Kmap1FA" outputs the results used by TABLE 6
+- Claim 6: "python factor_analyzer.py data_with_kmap.csv 1FA Kmap1FA" outputs the results used by TABLE 7
+- Claim 7: "python access_analyzer.py -s data_with_kmap.csv Kmap2FA" outputs the results used by TABLE 8
+- Claim 8: "python factor_analyzer.py data_with_kmap.csv 2FA Kmap2FA" outputs the results used by TABLE 9
+
+AUTOMATED VERIFICATION:
+- Run "python tools/compare_tables.py" to automatically verify ALL claims above
+- This script parses the LaTeX tables and validates 100% match with artifact outputs
+- Eliminates need for manual comparison; shows detailed verification per table

@@ -1,0 +1,34 @@
+\begin{table}[h!]
+\centering
+\footnotesize
+\begin{tabular}{>{\centering\arraybackslash}p{4cm} >{\centering\arraybackslash}p{3cm}}
+\toprule
+Factor Sufficiency & Percentage (Count) \\  \midrule
+$\access\implied(\app\myAnd\email)\myOr(\email\myAnd\sms)\myOr\pk$ & 12.1\% (4) \\
+$\access\implied\app\myAnd\email$ & 9.1\% (3) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\sms)$ & 9.1\% (3) \\
+$\access\implied\email\myAnd\sms$ & 9.1\% (3) \\
+$\access\implied\email$ & 9.1\% (3) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\pk)\myOr(\email\myAnd\sms)\myOr(\pk\myAnd\sms)$ & 6.1\% (2) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\sms)\myOr(\email\myAnd\sms)\myOr\pk$ & 6.1\% (2) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\sms)\myOr\pk$ & 6.1\% (2) \\
+$\access\implied(\app\myAnd\email)\myOr\sms$ & 6.1\% (2) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\pk)\myOr\sms$ & 3.0\% (1) \\
+$\access\implied(\app\myAnd\email)\myOr(\email\myAnd\sms)$ & 3.0\% (1) \\
+$\access\implied(\app\myAnd\pk)\myOr(\email\myAnd\sms)\myOr(\pk\myAnd\sms)$ & 3.0\% (1) \\
+$\access\implied\app\myOr\email\myOr\sms$ & 3.0\% (1) \\
+$\access\implied\app\myOr\sms$ & 3.0\% (1) \\
+$\access\implied\email\myOr\pk\myOr\sms$ & 3.0\% (1) \\
+$\access\implied\email\myOr\sms$ & 3.0\% (1) \\
+$\access\implied\pk\myOr\sms$ & 3.0\% (1) \\
+$\access\implied\sms$ & 3.0\% (1) \\
+\midrule
+Total & 100.0\% (33) \\
+\bottomrule
+\end{tabular}
+\caption{Simplified 2FA access patterns of 33 (out of 50)
+  websites. Each access pattern is simplified via Karnaugh maps by
+  combining 2FA access and password reset patterns for each studied
+  website.}
+\label{tab:2fa_kmaps}
+\end{table}

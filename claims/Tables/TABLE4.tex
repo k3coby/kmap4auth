@@ -1,0 +1,42 @@
+\begin{table}[h!]
+\centering
+\footnotesize
+\begin{tabular}{>{\centering\arraybackslash}p{5cm} >{\centering\arraybackslash}p{3cm}}
+\toprule
+Factor Sufficiency  & Percentage (Count) \\  \midrule
+$\access\implied(\app\myAnd\pwd)\myOr(\pwd\myAnd\sms)$ & 15.2\% (5) \\
+$\access\implied\app\myAnd\pwd$ & 12.1\% (4) \\
+$\access\implied(\app\myAnd\pwd)\myOr(\email\myAnd\pwd)\myOr(\pwd\myAnd\sms)$ & 12.1\% (4) \\
+$\access\implied(\app\myAnd\pwd)\myOr\pk\myOr(\pwd\myAnd\sms)$ & 12.1\% (4) \\
+$\access\implied(\app\myAnd\pk)\myOr(\app\myAnd\pwd)\myOr(\pk\myAnd\sms)\myOr(\pwd\myAnd\sms)$ & 9.1\% (3) \\
+$\access\implied(\app\myAnd\pwd)\myOr(\email\myAnd\pwd)\myOr\pk\myOr(\pwd\myAnd\sms)$ & 9.1\% (3) \\
+$\access\implied\pwd\myAnd\sms$ & 9.1\% (3) \\
+$\access\implied(\email\myAnd\pwd)\myOr(\pwd\myAnd\sms)$ & 6.1\% (2) \\
+$\access\implied(\app\myAnd\email)\myOr(\app\myAnd\pk)\myOr(\app\myAnd\pwd)\myOr(\email\myAnd\sms)\myOr(\pk\myAnd\sms)\myOr(\pwd\myAnd\sms)$ & 3.0\% (1) \\
+$\access\implied(\app\myAnd\pwd)\myOr(\app\myAnd\sms)\myOr(\email\myAnd\pwd)\myOr(\email\myAnd\sms)\myOr\pk\myOr(\pwd\myAnd\sms)$ & 3.0\% (1) \\
+$\access\implied(\app\myAnd\pwd)\myOr\pk$ & 3.0\% (1) \\
+$\access\implied\email\myAnd\pwd$ & 3.0\% (1) \\
+$\access\implied(\email\myAnd\pwd)\myOr\pk\myOr(\pwd\myAnd\sms)$ & 3.0\% (1) \\
+\midrule
+Total & 100.0\% (33) \\
+\midrule
+\midrule
+Factor Necessity  & Percentage (Count) \\ 
+\midrule
+$\access\imply\app\myOr\email\myOr\pk\myOr\sms$ & 100.0\% (33) \\
+$\access\imply\app\myOr\pk\myOr\sms$ & 63.6\% (21) \\
+$\access\imply\pwd$ & 57.6\% (19) \\
+$\access\imply\app\myOr\sms$ & 48.5\% (16) \\
+$\access\imply\app\myOr\email\myOr\pk$ & 18.2\% (6) \\
+$\access\imply\email\myOr\sms$ & 18.2\% (6) \\
+$\access\imply\app\myOr\email$ & 15.2\% (5) \\
+$\access\imply\app$ & 12.1\% (4) \\
+$\access\imply\pk\myOr\sms$ & 9.1\% (3) \\
+$\access\imply\sms$ & 9.1\% (3) \\
+$\access\imply\email$ & 3.0\% (1) \\
+\bottomrule
+\end{tabular}
+\caption{Two-factor authentication access patterns of 33 (out of 50)
+  websites that support 2FA.}
+\label{tab:2fa}
+\end{table}
