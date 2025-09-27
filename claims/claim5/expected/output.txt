@@ -1,0 +1,10 @@
+Table 6 (Kmap1FA sufficiency):
+[E]: 14
+[E][S]: 13
+[E][K][S]: 11
+[E][K]: 3
+[S]: 3
+[A][E][S]: 2
+[A][E][K][S]: 1
+[A][S]: 1
+[EQ]: 1

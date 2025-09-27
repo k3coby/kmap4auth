@@ -37,8 +37,9 @@ Quick Start (Automated Verification)
 Directory Layout
 - Root directory:
   - artifact/: data.csv, claims.txt, *.py, colab_artifact.ipynb, tools/
-  - claims/: per-claim run.sh + claim.txt
+  - claims/: per-claim run.sh + claim.txt + expected/ directories
   - claims/Tables/: LaTeX table files for automated verification
+  - infrastructure/: system requirements and infrastructure documentation
   - install.sh, license.txt, use.txt
 
 System Requirements
@@ -46,9 +47,10 @@ System Requirements
 - Tested on Ubuntu 22.04 and Google Colab (CPU).
 
 Verification Methods
-- **Individual Claims**: Run ./claims/claim*/run.sh and manually compare outputs to paper tables
+- **Individual Claims**: Run ./claims/claim*/run.sh and compare outputs against ./claims/claim*/expected/output.txt
 - **Notebook**: Use colab_artifact.ipynb for visual comparison of all tables
 - **Automated**: Use tools/compare_tables.py for automatic verification
 
 Notes
+- Each claim directory contains expected/ with reference outputs for validation.
 - For manual verification, compare printed outputs to paper tables using `claims.txt` mapping.

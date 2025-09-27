@@ -1,0 +1,22 @@
+Table 3 (Reset1FA sufficiency):
+[E][S]: 22
+[E]: 18
+[A][E][S]: 3
+[S]: 3
+[A][S]: 1
+[EQ]: 1
+Table 3 (Reset1FA necessity):
+[A][E][Q][S]: 48
+[A][E][S]: 48
+[E][Q][S]: 44
+[E][S]: 44
+[A][E]: 19
+[A][E][Q]: 19
+[E]: 19
+[E][Q]: 19
+[A][Q][S]: 5
+[A][S]: 4
+[Q][S]: 4
+[S]: 3
+[A][Q]: 1
+[Q]: 1

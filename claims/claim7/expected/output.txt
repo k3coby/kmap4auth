@@ -1,0 +1,19 @@
+Table 8 (Kmap2FA sufficiency):
+[AE][ES][K]: 4
+[AE]: 3
+[AE][AS]: 3
+[ES]: 3
+[E]: 3
+[AE][AK][ES][KS]: 2
+[AE][AS][ES][K]: 2
+[AE][AS][K]: 2
+[AE][S]: 2
+[AE][AK][S]: 1
+[AE][ES]: 1
+[AK][ES][KS]: 1
+[A][E][S]: 1
+[A][S]: 1
+[E][K][S]: 1
+[E][S]: 1
+[K][S]: 1
+[S]: 1

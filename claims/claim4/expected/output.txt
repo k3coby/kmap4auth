@@ -1,0 +1,19 @@
+Table 5 (Reset2FA sufficiency):
+[E]: 10
+[E][S]: 7
+[AE][AS]: 4
+[AE][ES]: 4
+[ES]: 2
+[S]: 2
+[AE]: 1
+[AE][AS][ES]: 1
+[A][E][S]: 1
+[A][S]: 1
+Table 5 (Reset2FA necessity):
+[A][E][S]: 33
+[E][S]: 31
+[A][E]: 22
+[E]: 17
+[A][S]: 15
+[A]: 5
+[S]: 4
